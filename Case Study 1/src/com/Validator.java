@@ -1,0 +1,20 @@
+package com;
+
+public class Validator {
+	private Validator(){
+		
+	}
+	public static Validator getValidator(){
+		return new Validator();
+	}
+	
+	public boolean validateStudentDetails(Student student){
+		if(student.getName().equals(null) || student.getName().trim().length()==0)
+		{
+			return false;
+		}
+			return true;
+		
+	}
+
+}
